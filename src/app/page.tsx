@@ -100,7 +100,6 @@ export default function Home() {
   return (
     <div className="flex flex-row">
       <div className="bg-[#333333] h-screen w-20 fixed left-0 flex flex-col p-5 gap-5">
-        {/* <FontAwesomeIcon icon={faBars} color="#5f5f5f" className="sidebar-icon"/> */}
         <a href="https://www.linkedin.com/in/jrichm444/" target="_blank">
             <FontAwesomeIcon icon={faLinkedinIn} color="#5f5f5f" className="sidebar-icon"/>
         </a>
