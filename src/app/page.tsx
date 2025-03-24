@@ -155,7 +155,7 @@ export default function Home() {
                 <div className='px-6 flex flex-row gap-6'>
                     <Image className="project-img" alt="birdsim.png" src="/birdsim.png" width={500} height={300} />
                     <div>
-                      <p className="comment">// <a href="https://github.com/JRichm/betSim" target="_blank">github</a></p>
+                      <p className="comment">&#47;&#47; <a href="https://github.com/JRichm/betSim" target="_blank">github</a></p>
                       <p className='pl-6 w-[80%]'>- An interactive simulation of flocking behavior, inspired by natural bird movements. Explores algorithms for realistic group dynamics, offering insights into emergent behaviors and crowd modeling.</p>
                     </div>
                 </div>
@@ -165,7 +165,7 @@ export default function Home() {
                 <div className='px-6 flex flex-row gap-6'>
                     <Image className="project-img" alt="gardengame.png" src="/gardengame.png" width={500} height={300} />
                     <div>
-                      <p className="comment">// <a href="https://github.com/JRichm/GardenGame" target="_blank">github</a> | <a href="youtube.com" target="_blank">demo video</a></p>
+                      <p className="comment">&#47;&#47; <a href="https://github.com/JRichm/GardenGame" target="_blank">github</a> | <a href="youtube.com" target="_blank">demo video</a></p>
                       <p className='pl-6 w-[80%]'>- A casual strategy game where players cultivate and manage a virtual garden. Focuses on planning, resource management, and creative design elements, encouraging players to experiment with different plant varieties and layouts.</p>
                     </div>
                 </div>
@@ -175,7 +175,7 @@ export default function Home() {
                 <div className='px-6 flex flex-row gap-6'>
                     <Image className="project-img" alt="midifret.png" src="/midifret.png" width={500} height={300} />
                     <div>
-                      <p className="comment">// <a href="https://github.com/JRichm/midifret" target="_blank">github</a> | <a href="youtube.com" target="_blank">demo video</a></p>
+                      <p className="comment">&#47;&#47; <a href="https://github.com/JRichm/midifret" target="_blank">github</a> | <a href="youtube.com" target="_blank">demo video</a></p>
                       <p className='pl-6 w-[80%]'>- A web-based MIDI controller emulating a guitar fretboard. Designed for musicians and hobbyists to experiment with chord progressions, melodies, and sound design without needing a physical instrument.</p>
                     </div>
                 </div>
@@ -188,7 +188,7 @@ export default function Home() {
           <div className={`cell-div ${activeCell === "work_experience" ? "active-cell" : ""}`} onClick={() => handleCellClick("work_experience")}>
             <div className="border-l-[1px] border-[#3f3f3f] px-3">
               <div className="work-div">
-                <p className="comment">// Rocky Mountain Reserve</p>
+                <p className="comment">&#47;&#47; Rocky Mountain Reserve</p>
                 <h4>Junior Software Developer <a href='https://github.com/jamesrmr' target='_blank' className='text-[#4f4f4f] italic'>_github_</a></h4>
                 <p className='pl-6'> - Developed an in-house application to streamline file processing and client data management.</p>
                 <p className='pl-6'> - Built a webhook-enabled API that automates task creation in ClickUp.</p>
@@ -197,7 +197,7 @@ export default function Home() {
                 <p className='pl-6'> - Built Sifter, a data extraction tool for querying a 1.4M-row participant database.</p>
               </div>
               <div className="work-div">
-                <p className="comment">// IKEA</p>
+                <p className="comment">&#47;&#47; IKEA</p>
                 <h4>Active Sales</h4>
                 <p className='pl-6'> - Improved inventory accuracy by optimizing high-demand product locations.</p>
                 <p className='pl-6'> - Trained coworkers on software, scanners, and customer interaction.</p>
@@ -205,7 +205,7 @@ export default function Home() {
                 <p className='pl-6'> - Managed dock logistics, coordinating 3–5 truckloads daily across six docks.</p>
               </div>
               <div className="work-div">
-                <p className="comment">// Planet Fitness</p>
+                <p className="comment">&#47;&#47; Planet Fitness</p>
                 <h4>Assistant Manager</h4>
                 <p className='pl-6'> - Led a team of 15, overseeing hiring, training, and daily operations.</p>
                 <p className='pl-6'> - Conducted equipment audits to ensure safety and customer satisfaction.</p>
