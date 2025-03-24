@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn, faGithub} from '@fortawesome/free-brands-svg-icons'
-import { faUser, faPhone, faBriefcase, faStar, faCode, faBars} from '@fortawesome/free-solid-svg-icons'
+import { faUser, faPhone, faBriefcase, faStar, faCode } from '@fortawesome/free-solid-svg-icons'
 import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 
 
