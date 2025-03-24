@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image'
 
 import { useState, useEffect } from 'react';
 
@@ -153,7 +154,7 @@ export default function Home() {
               <div className="work-div">
                 <h4>BirdSim</h4>
                 <div className='px-6 flex flex-row gap-6'>
-                    <img className="project-img" alt="project-img" src="/birdsim.png" />
+                    <Image className="project-img" alt="birdsim.png" src="/birdsim.png" width={500} height={300} />
                     <div>
                       <p className="comment">// <a href="https://github.com/JRichm/betSim" target="_blank">github</a></p>
                       <p className='pl-6 w-[80%]'>- An interactive simulation of flocking behavior, inspired by natural bird movements. Explores algorithms for realistic group dynamics, offering insights into emergent behaviors and crowd modeling.</p>
@@ -163,7 +164,7 @@ export default function Home() {
               <div className="work-div">
                 <h4>GardenGame</h4>
                 <div className='px-6 flex flex-row gap-6'>
-                    <img className="project-img" alt="project-img" src="/gardengame.png" />
+                    <Image className="project-img" alt="gardengame.png" src="/gardengame.png" width={500} height={300} />
                     <div>
                       <p className="comment">// <a href="https://github.com/JRichm/GardenGame" target="_blank">github</a> | <a href="youtube.com" target="_blank">demo video</a></p>
                       <p className='pl-6 w-[80%]'>- A casual strategy game where players cultivate and manage a virtual garden. Focuses on planning, resource management, and creative design elements, encouraging players to experiment with different plant varieties and layouts.</p>
@@ -173,7 +174,7 @@ export default function Home() {
               <div className="work-div">
                 <h4>MidiFret</h4>
                 <div className='px-6 flex flex-row gap-6'>
-                    <img className="project-img" alt="project-img" src="/midifret.png" />
+                    <Image className="project-img" alt="midifret.png" src="/midifret.png" width={500} height={300} />
                     <div>
                       <p className="comment">// <a href="https://github.com/JRichm/midifret" target="_blank">github</a> | <a href="youtube.com" target="_blank">demo video</a></p>
                       <p className='pl-6 w-[80%]'>- A web-based MIDI controller emulating a guitar fretboard. Designed for musicians and hobbyists to experiment with chord progressions, melodies, and sound design without needing a physical instrument.</p>
