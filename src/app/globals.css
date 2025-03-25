@@ -119,7 +119,8 @@ a {
 }
 
 .project-img {
-  max-width: 500px;
+  width: 500px;
+  height: 300px;
 }
 
 .sidebar-icon {
