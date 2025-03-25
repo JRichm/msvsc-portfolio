@@ -147,36 +147,46 @@ export default function Home() {
           <h3 className="text-left">Projects</h3>
           <div className={`cell-div ${activeCell === "my_projects" ? "active-cell" : ""}`} onClick={() => handleCellClick("my_projects")}>
             <div className="border-l-[1px] border-[#3f3f3f] px-3">
+
               <div className="work-div">
                 <h4>BirdSim</h4>
-                <div className='px-6 flex flex-row gap-6'>
-                    <Image className="project-img" alt="birdsim.png" src="/birdsim.png" width={500} height={300} />
-                    <div>
-                      <p className="comment">&#47;&#47; <a href="https://github.com/JRichm/betSim" target="_blank">github</a></p>
-                      <p className='pl-6 w-[80%]'>- An interactive simulation of flocking behavior, inspired by natural bird movements. Explores algorithms for realistic group dynamics, offering insights into emergent behaviors and crowd modeling.</p>
-                    </div>
+                <div className='px-6 py-4 flex flex-row gap-6'>
+                  <div className='project-img-container'>
+                    <Image alt="birdsim.png" src="/birdsim.png" width={800} height={800} />
+                  </div>
+                  <div className='w-[60%]'>
+                    <p className="comment">&#47;&#47; <a href="https://github.com/JRichm/betSim" target="_blank">github</a></p>
+                    <p className=''>An interactive simulation of flocking behavior, inspired by natural bird movements. Explores algorithms for realistic group dynamics, offering insights into emergent behaviors and crowd modeling.</p>
+                  </div>
                 </div>
               </div>
+
               <div className="work-div">
                 <h4>GardenGame</h4>
-                <div className='px-6 flex flex-row gap-6'>
-                    <Image className="project-img" alt="gardengame.png" src="/gardengame.png" width={500} height={300} />
-                    <div>
-                      <p className="comment">&#47;&#47; <a href="https://github.com/JRichm/GardenGame" target="_blank">github</a> | <a href="youtube.com" target="_blank">demo video</a></p>
-                      <p className='pl-6 w-[80%]'>- A casual strategy game where players cultivate and manage a virtual garden. Focuses on planning, resource management, and creative design elements, encouraging players to experiment with different plant varieties and layouts.</p>
-                    </div>
+                <div className='px-6 py-4 flex flex-row gap-6'>
+                  <div className='project-img-container'>
+                    <Image alt="gardengame.png" src="/gardengame.png" width={800} height={800} />
+                  </div>
+                  <div className='w-[60%]'>
+                    <p className="comment">&#47;&#47; <a href="https://github.com/JRichm/GardenGame" target="_blank">github</a> | <a href="youtube.com" target="_blank">demo video</a></p>
+                    <p className=''>A casual strategy game where players cultivate and manage a virtual garden. Focuses on planning, resource management, and creative design elements, encouraging players to experiment with different plant varieties and layouts.</p>
+                  </div>
                 </div>
               </div>
+
               <div className="work-div">
                 <h4>MidiFret</h4>
-                <div className='px-6 flex flex-row gap-6'>
-                    <Image className="project-img" alt="midifret.png" src="/midifret.png" width={500} height={300} />
-                    <div>
-                      <p className="comment">&#47;&#47; <a href="https://github.com/JRichm/midifret" target="_blank">github</a> | <a href="youtube.com" target="_blank">demo video</a></p>
-                      <p className='pl-6 w-[80%]'>- A web-based MIDI controller emulating a guitar fretboard. Designed for musicians and hobbyists to experiment with chord progressions, melodies, and sound design without needing a physical instrument.</p>
-                    </div>
+                <div className='px-6 py-4 flex flex-row gap-6'>
+                  <div className='project-img-container'>
+                    <Image alt="midifret.png" src="/midifret.png" width={800} height={800} />
+                  </div>
+                  <div className='w-[60%]'>
+                    <p className="comment">&#47;&#47; <a href="https://github.com/JRichm/midifret" target="_blank">github</a> | <a href="youtube.com" target="_blank">demo video</a></p>
+                    <p className=''>A web-based MIDI controller emulating a guitar fretboard. Designed for musicians and hobbyists to experiment with chord progressions, melodies, and sound design without needing a physical instrument.</p>
+                  </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>

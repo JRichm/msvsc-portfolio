@@ -109,8 +109,7 @@ a {
 }
 
 .cell-div:hover {
-  /* cursor: text; */
-  cursor: pointer;
+  cursor: text;
   border: 1px solid #7f7f7f;
 }
 
@@ -118,16 +117,18 @@ a {
   border: 1px solid #007fd4 !important;
 }
 
-.project-img {
-  width: 500px;
-  height: 300px;
-}
-
 .sidebar-icon {
   aspect-ratio: 1;
   outline: transparent;
   width: 100%;
   height: 100%;
+}
+
+.project-img-container {
+  background-color: #1e1e1e;
+  width: 450px;
+  padding: 15px;
+  border: 1px #4e4e4e solid;
 }
 
 .sidebar-icon:hover {
