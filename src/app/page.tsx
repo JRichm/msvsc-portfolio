@@ -47,19 +47,19 @@ function HeaderTab({ name, isActive }: { name: string; isActive: boolean }) {
   );
 }
 
-function SubmitContact(e: React.FormEvent<HTMLFormElement>) {
-  e.preventDefault();
+// function SubmitContact(e: React.FormEvent<HTMLFormElement>) {
+//   e.preventDefault();
 
-  const formData = new FormData(e.currentTarget);
-  const honeypotValue = formData.get("honeypot");
+//   const formData = new FormData(e.currentTarget);
+//   const honeypotValue = formData.get("honeypot");
 
-  if (honeypotValue) {
-    console.log("bot detected, form ignored.")
-    return;
-  }
+//   if (honeypotValue) {
+//     console.log("bot detected, form ignored.")
+//     return;
+//   }
 
-  console.log("Form Submitted")  
-}
+//   console.log("Form Submitted")  
+// }
 
 
 export default function Home() {
