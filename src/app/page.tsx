@@ -95,7 +95,7 @@ export default function Home() {
   }
 
   const text =
-    "a software developer who is focused on writing clean code and efficient solutions. I love solving problems in creative ways and thinking outside of the box to find the answer to the puzzle";
+    "a software developer who loves writing clean, efficient code and solving problems in creative ways. I believe that any problem can be solved with the right approach and a bit of thinking outside-the-box.";
 
   return (
     <div className="flex flex-row">
@@ -123,7 +123,7 @@ export default function Home() {
           {text
             .split(" ")
             .reduce((lines: string[], word) => {
-              if (!lines.length || lines[lines.length - 1].length + word.length > 111) {
+              if (!lines.length || lines[lines.length - 1].length + word.length > 108) {
                 lines.push(`// ${word}`);
               } else {
                 lines[lines.length - 1] += ` ${word}`;
@@ -138,8 +138,8 @@ export default function Home() {
           <h3 className="text-left">About Me</h3>
           <div className={`cell-div ${activeCell === "about_me" ? "active-cell" : ""}`} onClick={() => handleCellClick("about_me")}>
             <div className="border-l-[1px] border-[#3f3f3f] px-3">
-              <p className='mb-4'>I’m a software developer who thrives on blending creativity with technology to deliver real-world solutions. Whether I’m designing interactive experiences or solving complex problems, I bring a curious mindset and a commitment to innovation to every project. My work is driven by a balance of technical expertise and creative insight, ensuring that I not only meet but exceed project goals.</p>
-              <p className='mb-4'>Outside of work, I immerse myself in procedural generation, music composition, and strategy games—activities that sharpen my problem-solving skills and fuel my creative ideas. I’m always exploring new ways to innovate, constantly brainstorming and experimenting to stay ahead of the curve.</p>
+              <p className='mb-4'>I’m a software developer who enjoys blending creativity with technology to build real-world solutions. Whether I’m designing interactive experiences or tackling tough problems, I always bring a curious mindset and a drive to innovate. I like finding smart, efficient ways to solve challenges while keeping things clean and maintainable.</p>
+              <p className='mb-4'>Outside of work, I spend a lot of time messing around with procedural generation, making music, and playing strategy games. These hobbies help me think in new ways and keep my problem-solving skills sharp. I’m always experimenting, learning, and looking for new ways to push my ideas further.</p>
             </div>
           </div>
         </div>
@@ -147,9 +147,6 @@ export default function Home() {
           <h3 className="text-left">Projects</h3>
           <div className={`cell-div ${activeCell === "my_projects" ? "active-cell" : ""}`} onClick={() => handleCellClick("my_projects")}>
             <div className="border-l-[1px] border-[#3f3f3f] px-3">
-              <div className="work-div">
-                <h4>RecieptReader</h4>
-              </div>
               <div className="work-div">
                 <h4>BirdSim</h4>
                 <div className='px-6 flex flex-row gap-6'>
@@ -219,14 +216,14 @@ export default function Home() {
           <div className='w-full flex flex-row'>
             <h3 className="text-left">Message</h3>
             <div className="w-full border-l-[1px] border-[#5f5f5f] px-6 mx-6 pt-4 flex flex-row gap-24">
-              <form onSubmit={SubmitContact} className='flex flex-col w-full'>
+              <form action="https://formspree.io/f/mdkedgnz" method="POST" className='flex flex-col w-full'>
                 <input type="text" name="honeypot" className="hidden" style={{ display: "none" }} aria-hidden="true"></input>
                 <label>email</label>
-                <input type="text" className='text-input'></input>
+                <input type="email" name="email" className='text-input'></input>
                 <label>name</label>
-                <input type="text" className='text-input'></input>
+                <input type="text" name="name" className='text-input'></input>
                 <label>message</label>
-                <textarea className='text-input resize-none h-48 max-w-full!'></textarea>
+                <textarea name="message" className='text-input resize-none h-48 max-w-full!'></textarea>
                 <button type="submit" className='btn-send-contact'>Send Message</button>
               </form>
             </div>
