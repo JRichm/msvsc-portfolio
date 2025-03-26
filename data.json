@@ -1,0 +1,40 @@
+{
+    "projects": {
+        "birdsim": {
+            "name": "BridSim",
+            "description": "An interactive simulation of flocking behavior, inspired by natural bird movements. Explores algorithms for realistic group dynamics, offering insights into emergent behaviors and crowd modeling.",
+            "picture": "/birdsim.png",
+            "picture_alt": "birdsim.png",
+            "github": "https://github.com/JRichm/betSim",
+            "technologies": [
+                "python",
+                "pygame"
+            ]
+        },
+        "gardengame": {
+            "name": "GardenGame",
+            "description": "A casual strategy game where players cultivate and manage a virtual garden. Focuses on planning, resource management, and creative design elements, encouraging players to experiment with different plant varieties and layouts.",
+            "picture": "/gardengame.png",
+            "picture_alt": "gardengame.png",
+            "github": "https://github.com/JRichm/GardenGame",
+            "technologies": [
+                "javascript",
+                "python",
+                "flask",
+                "sqlalchemy",
+                "postgres"
+            ]
+        },
+        "midifret": {
+            "name": "MidiFret",
+            "description": "A web-based MIDI controller emulating a guitar fretboard. Designed for musicians and hobbyists to experiment with chord progressions, melodies, and sound design without needing a physical instrument",
+            "picture": "/midifret.png",
+            "picture_alt": "midifret.png",
+            "github": "https://github.com/JRichm/midifret",
+            "technologies": [
+                "javascript",
+                "html"
+            ]
+        }
+    }
+}
