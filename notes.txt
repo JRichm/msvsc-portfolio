@@ -1,0 +1,5 @@
+TODO:
+    add mobile compatibility
+    add technology used in project area
+    fix images not displaying on deployed website
+    add more stuff to hero section (too empty)
