@@ -33,7 +33,7 @@ function Project({ name }: {name: string}) {
   return (
     <div className='work-div'>
       <h4>{project.name}</h4>
-      <div className='px-6 py-4 flex lg:flex-row flex-col gap-6'>
+      <div className='px-6 py-4 flex lg:flex-row flex-col place-items-center gap-6'>
         <div className='project-img-container'>
           <Image src={project.picture} alt={project.picture_alt} width={800} height={600} />
         </div>

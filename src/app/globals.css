@@ -136,6 +136,7 @@ a {
 .project-img-container {
   background-color: #1e1e1e;
   width: 600px;
+  max-width: 65vw;
   padding: 15px;
   border: 1px #4e4e4e solid;
 }
