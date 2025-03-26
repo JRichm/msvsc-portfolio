@@ -24,7 +24,7 @@ const iconMap: Record<string, IconDefinition | undefined> = {
 
 
 function Project({ name }: {name: string}) {
-  const project = data.projects[name];
+  const project = (data.projects as Record<string, typeof data.projects[keyof typeof data.projects]>)[name];
 
   if (!project) {
     return <div>{name} project not found</div>
