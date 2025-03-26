@@ -94,12 +94,13 @@ export default function Home() {
     setActiveCell(section);
   }
 
-  const text =
-    "a software developer who loves writing clean, efficient code and solving problems in creative ways. I believe that any problem can be solved with the right approach and a bit of thinking outside-the-box.";
+  const text = "a software developer who loves writing clean, efficient code and solving problems in creative ways. I believe that any problem can be solved with the right approach and a bit of thinking outside-the-box.";
 
   return (
     <div className="flex flex-row">
-      <div className="bg-[#333333] h-screen w-20 fixed left-0 flex flex-col p-5 gap-5">
+      
+      {/* Side Panel */}
+      <div className="bg-[#333333] h-[100%] w-20 fixed left-0 flex flex-col p-5 gap-5">
         <a href="https://www.linkedin.com/in/jrichm444/" target="_blank">
             <FontAwesomeIcon icon={faLinkedinIn} color="#5f5f5f" className="sidebar-icon"/>
         </a>
@@ -110,12 +111,18 @@ export default function Home() {
             <FontAwesomeIcon icon={faGithub} color="#5f5f5f" className="sidebar-icon"/>
         </a>
       </div>
-      <div className="bg-[#1e1e1e] min-h-screen flex-1 ml-20 mb-20 place-items-center">
+
+      {/* Main Section */}
+      <div className="bg-[#1e1e1e] min-h-[100%] flex-1 ml-20 mb-20 place-items-center">
+
+        {/* Header Tabs */}
         <div className="w-full bg-[#252526] flex flex-row fixed z-10 drop-shadow-md">
           {sections.map((section) => (
             <HeaderTab key={section} name={section} isActive={activeSection === section} />
           ))}
         </div>
+
+        {/* Hero Section */}
         <div id="Welcome" className="mt-[44vh] mb-[44vh] translate-y-[-44%] w-[80vw]">
           <h6>Hi, my name is</h6>
           <h1>James Richmond</h1>
@@ -133,6 +140,8 @@ export default function Home() {
               <p key={index} className="comment">{line}</p>
             ))}
         </div>
+
+        {/* About Me */}
         <div id="about_me" className="flex flex-col w-[80vw]">
           <h3 className="text-left">About Me</h3>
           <div className={`cell-div ${activeCell === "about_me" ? "active-cell" : ""}`} onClick={() => handleCellClick("about_me")}>
@@ -142,6 +151,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* Projects */}
         <div id="my_projects" className="flex flex-col w-[80vw]">
           <h3 className="text-left">Projects</h3>
           <div className={`cell-div ${activeCell === "my_projects" ? "active-cell" : ""}`} onClick={() => handleCellClick("my_projects")}>
@@ -189,6 +200,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* Work Experience */}
         <div id="work_experience" className="flex flex-col w-[80vw]">
           <h3 className="text-left">Work Experience</h3>
           <div className={`cell-div ${activeCell === "work_experience" ? "active-cell" : ""}`} onClick={() => handleCellClick("work_experience")}>
@@ -221,7 +234,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* Contact */}
         <div id="contact" className="flex flex-row w-[80vw] mt-12">
+
+          {/* Message Me */}
           <div className='w-full flex flex-row'>
             <h3 className="text-left">Message</h3>
             <div className="w-full border-l-[1px] border-[#5f5f5f] px-6 mx-6 pt-4 flex flex-row gap-24">
@@ -237,6 +254,8 @@ export default function Home() {
               </form>
             </div>
           </div>
+
+          {/* Contact Details */}
           <div className='w-[60%] flex flex-row'>
             <h3 className="text-left">Contact</h3>
             <div className="w-full border-l-[1px] border-[#5f5f5f] px-6 mx-6 pt-4 flex flex-row gap-24">
