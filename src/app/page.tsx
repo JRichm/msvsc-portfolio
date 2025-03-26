@@ -37,16 +37,18 @@ function Project({ name }: {name: string}) {
         <div className='project-img-container'>
           <Image src={project.picture} alt={project.picture_alt} width={800} height={600} />
         </div>
-        <div className='flex flex-col gap-8 w-full'>
+        <div className='flex flex-col gap-8 w-full justify-between'>
           <div>
             <p className='comment'>&#47;&#47; <a href={project.github} target='_blank'>github</a></p>
             <p>{project.description}</p>
           </div>
-          <div>
-            <p className='comment'>&#47;&#47; Technologies used</p>
-            <div className='flex flex-row gap-4'>
+          <div className='flex flex-col w-full'>
+            {/* <p className='comment'>&#47;&#47; Technologies used</p> */}
+            <div className='flex flex-row gap-4 h-8 border-b-[#3e3e3e] w-fit mb-8'>
               {project.technologies.map((tech) => (
-                <p key={tech}>{tech}</p>
+                <div className='tech-icon-container h-[100%]' key={tech}>
+                  <Image src={`/tech_icons/${tech}.png`} alt={tech} width={200} height={200} className='h-[100%] w-fit object-scale-down' />
+                </div>
               ))}
             </div>
           </div>
