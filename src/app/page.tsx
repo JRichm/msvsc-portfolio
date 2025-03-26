@@ -100,7 +100,7 @@ export default function Home() {
     <div className="flex flex-row">
       
       {/* Side Panel */}
-      <div className="bg-[#333333] h-[100%] w-20 fixed left-0 flex flex-col p-5 gap-5">
+      <div className="bg-[#333333] hidden h-[100%] w-20 fixed left-0 lg:flex flex-col p-5 gap-5">
         <a href="https://www.linkedin.com/in/jrichm444/" target="_blank">
             <FontAwesomeIcon icon={faLinkedinIn} color="#5f5f5f" className="sidebar-icon"/>
         </a>
@@ -113,10 +113,10 @@ export default function Home() {
       </div>
 
       {/* Main Section */}
-      <div className="bg-[#1e1e1e] min-h-[100%] flex-1 ml-20 mb-20 place-items-center">
+      <div className="bg-[#1e1e1e] min-h-[100%] flex-1 lg:ml-20 mb-20 place-items-center">
 
         {/* Header Tabs */}
-        <div className="w-full bg-[#252526] flex flex-row fixed z-10 drop-shadow-md">
+        <div className="w-full bg-[#252526] hidden lg:flex flex-row fixed z-10 drop-shadow-md">
           {sections.map((section) => (
             <HeaderTab key={section} name={section} isActive={activeSection === section} />
           ))}
@@ -160,11 +160,11 @@ export default function Home() {
 
               <div className="work-div">
                 <h4>BirdSim</h4>
-                <div className='px-6 py-4 flex flex-row gap-6'>
+                <div className='px-6 py-4 flex lg:flex-row flex-col gap-6'>
                   <div className='project-img-container'>
                     <Image alt="birdsim.png" src="/birdsim.png" width={800} height={800} />
                   </div>
-                  <div className='w-[60%]'>
+                  <div className='lg:w-[60%]'>
                     <p className="comment">&#47;&#47; <a href="https://github.com/JRichm/betSim" target="_blank">github</a></p>
                     <p className=''>An interactive simulation of flocking behavior, inspired by natural bird movements. Explores algorithms for realistic group dynamics, offering insights into emergent behaviors and crowd modeling.</p>
                   </div>
@@ -173,11 +173,11 @@ export default function Home() {
 
               <div className="work-div">
                 <h4>GardenGame</h4>
-                <div className='px-6 py-4 flex flex-row gap-6'>
+                <div className='px-6 py-4 flex lg:flex-row flex-col gap-6'>
                   <div className='project-img-container'>
                     <Image alt="gardengame.png" src="/gardengame.png" width={800} height={800} />
                   </div>
-                  <div className='w-[60%]'>
+                  <div className='lg:w-[60%]'>
                     <p className="comment">&#47;&#47; <a href="https://github.com/JRichm/GardenGame" target="_blank">github</a> | <a href="youtube.com" target="_blank">demo video</a></p>
                     <p className=''>A casual strategy game where players cultivate and manage a virtual garden. Focuses on planning, resource management, and creative design elements, encouraging players to experiment with different plant varieties and layouts.</p>
                   </div>
@@ -186,11 +186,11 @@ export default function Home() {
 
               <div className="work-div">
                 <h4>MidiFret</h4>
-                <div className='px-6 py-4 flex flex-row gap-6'>
+                <div className='px-6 py-4 flex lg:flex-row flex-col gap-6'>
                   <div className='project-img-container'>
                     <Image alt="midifret.png" src="/midifret.png" width={800} height={800} />
                   </div>
-                  <div className='w-[60%]'>
+                  <div className='lg:w-[60%]'>
                     <p className="comment">&#47;&#47; <a href="https://github.com/JRichm/midifret" target="_blank">github</a> | <a href="youtube.com" target="_blank">demo video</a></p>
                     <p className=''>A web-based MIDI controller emulating a guitar fretboard. Designed for musicians and hobbyists to experiment with chord progressions, melodies, and sound design without needing a physical instrument.</p>
                   </div>
@@ -236,10 +236,10 @@ export default function Home() {
         </div>
 
         {/* Contact */}
-        <div id="contact" className="flex flex-row w-[80vw] mt-12">
+        <div id="contact" className="flex lg:flex-row flex-col w-[80vw] mt-12">
 
           {/* Message Me */}
-          <div className='w-full flex flex-row'>
+          <div className='w-full flex lg:flex-row flex-col'>
             <h3 className="text-left">Message</h3>
             <div className="w-full border-l-[1px] border-[#5f5f5f] px-6 mx-6 pt-4 flex flex-row gap-24">
               <form action="https://formspree.io/f/mdkedgnz" method="POST" className='flex flex-col w-full'>
@@ -256,7 +256,7 @@ export default function Home() {
           </div>
 
           {/* Contact Details */}
-          <div className='w-[60%] flex flex-row'>
+          <div className='w-[60%] flex lg:flex-row flex-col lg:mt-0 mt-20'>
             <h3 className="text-left">Contact</h3>
             <div className="w-full border-l-[1px] border-[#5f5f5f] px-6 mx-6 pt-4 flex flex-row gap-24">
               <div>
