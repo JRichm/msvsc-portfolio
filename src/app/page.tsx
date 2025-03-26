@@ -110,7 +110,6 @@ export default function Home() {
             <FontAwesomeIcon icon={faGithub} color="#5f5f5f" className="sidebar-icon"/>
         </a>
       </div>
-      <p className='right-0 bottom-0 fixed vertical'>this is my email</p>
       <div className="bg-[#1e1e1e] min-h-screen flex-1 ml-20 mb-20 place-items-center">
         <div className="w-full bg-[#252526] flex flex-row fixed z-10 drop-shadow-md">
           {sections.map((section) => (
