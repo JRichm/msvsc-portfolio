@@ -9,7 +9,6 @@ import { faUser, faPhone, faBriefcase, faStar, faCode } from '@fortawesome/free-
 import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 
 import { projects, tech_images } from '../../data.json'
-import { Icon } from 'next/dist/lib/metadata/types/metadata-types';
 
 interface TechImages {
   [key: string]: string;
