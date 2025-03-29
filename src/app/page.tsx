@@ -9,6 +9,7 @@ import { faUser, faPhone, faBriefcase, faStar, faCode } from '@fortawesome/free-
 import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 
 import { projects, tech_images } from '../../data.json'
+import { Icon } from 'next/dist/lib/metadata/types/metadata-types';
 
 interface TechImages {
   [key: string]: string;
@@ -29,7 +30,7 @@ const iconMap: Record<string, IconDefinition | undefined> = {
 
 
 function Project({ name }: {name: string}) {
-  const project = (projects as Record<string, any>)[name];
+  const project = (projects as Record<string, typeof projects[keyof typeof projects]>)[name];
 
   if (!project) {
     return <div>{name} project not found</div>
