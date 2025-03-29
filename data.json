@@ -3,7 +3,7 @@
         "birdsim": {
             "name": "BridSim",
             "description": "An interactive simulation of flocking behavior, inspired by natural bird movements. Explores algorithms for realistic group dynamics, offering insights into emergent behaviors and crowd modeling.",
-            "picture": "https://raw.githubusercontent.com/JRichm/images/refs/heads/main/msvsc-portfolio/birdsim.png",
+            "picture": "https://raw.githubusercontent.com/JRichm/images/main/msvsc-portfolio/birdsim.png",
             "picture_alt": "birdsim.png",
             "github": "https://github.com/JRichm/betSim",
             "technologies": [
@@ -14,7 +14,7 @@
         "gardengame": {
             "name": "GardenGame",
             "description": "A casual strategy game where players cultivate and manage a virtual garden. Focuses on planning, resource management, and creative design elements, encouraging players to experiment with different plant varieties and layouts.",
-            "picture": "https://raw.githubusercontent.com/JRichm/images/refs/heads/main/msvsc-portfolio/gardengame.png",
+            "picture": "https://raw.githubusercontent.com/JRichm/images/main/msvsc-portfolio/gardengame.png",
             "picture_alt": "gardengame.png",
             "github": "https://github.com/JRichm/GardenGame",
             "technologies": [
@@ -28,7 +28,7 @@
         "midifret": {
             "name": "MidiFret",
             "description": "A web-based MIDI controller emulating a guitar fretboard. Designed for musicians and hobbyists to experiment with chord progressions, melodies, and sound design without needing a physical instrument",
-            "picture": "https://raw.githubusercontent.com/JRichm/images/refs/heads/main/msvsc-portfolio/midifret.png",
+            "picture": "https://raw.githubusercontent.com/JRichm/images/main/msvsc-portfolio/midifret.png",
             "picture_alt": "midifret.png",
             "github": "https://github.com/JRichm/midifret",
             "technologies": [
@@ -38,12 +38,12 @@
         }
     },
         "tech_images": {
-            "python": "https://raw.githubusercontent.com/JRichm/images/refs/heads/main/tech_icons/python.png",
-            "pygame": "https://raw.githubusercontent.com/JRichm/images/refs/heads/main/tech_icons/pygame.png",
-            "javascript": "https://raw.githubusercontent.com/JRichm/images/refs/heads/main/tech_icons/javascript.png",
-            "flask": "https://raw.githubusercontent.com/JRichm/images/refs/heads/main/tech_icons/flask.png",
-            "sqlalchemy": "https://raw.githubusercontent.com/JRichm/images/refs/heads/main/tech_icons/sqlalchemy.png",
-            "postgres": "https://raw.githubusercontent.com/JRichm/images/refs/heads/main/tech_icons/postgres.png",
-            "html": "https://raw.githubusercontent.com/JRichm/images/refs/heads/main/tech_icons/html.png"
+            "python": "https://raw.githubusercontent.com/JRichm/images/main/tech_icons/python.png",
+            "pygame": "https://raw.githubusercontent.com/JRichm/images/main/tech_icons/pygame.png",
+            "javascript": "https://raw.githubusercontent.com/JRichm/images/main/tech_icons/javascript.png",
+            "flask": "https://raw.githubusercontent.com/JRichm/images/main/tech_icons/flask.png",
+            "sqlalchemy": "https://raw.githubusercontent.com/JRichm/images/main/tech_icons/sqlalchemy.png",
+            "postgres": "https://raw.githubusercontent.com/JRichm/images/main/tech_icons/postgres.png",
+            "html": "https://raw.githubusercontent.com/JRichm/images/main/tech_icons/html.png"
         }
 }

@@ -40,7 +40,7 @@ function Project({ name }: {name: string}) {
       <h4>{project.name}</h4>
       <div className='px-6 py-4 flex lg:flex-row flex-col place-items-center gap-6'>
         <div className='project-img-container'>
-          <Image src={project.picture} alt={project.picture_alt} width={800} height={600} />
+          <Image loader={({ src }) => src} unoptimized src={project.picture} alt={project.picture_alt} width={800} height={600} />
         </div>
         <div className='flex flex-col gap-8 w-full justify-between'>
           <div>
@@ -52,7 +52,7 @@ function Project({ name }: {name: string}) {
             <div className='flex flex-row gap-4 h-8 border-b-[#3e3e3e] w-fit mb-8'>
               {project.technologies.map((tech: string) => (
                 <div className='tech-icon-container h-[100%]' key={tech}>
-                  <Image src={techImages[tech]} alt={tech} width={200} height={200} className='h-[100%] w-fit object-scale-down' />
+                  <Image loader={({ src }) => src} unoptimized src={techImages[tech]} alt={tech} width={200} height={200} className='h-[100%] w-fit object-scale-down' />
                 </div>
               ))}
             </div>
