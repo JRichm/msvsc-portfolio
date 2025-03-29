@@ -8,8 +8,13 @@ import { faLinkedinIn, faGithub} from '@fortawesome/free-brands-svg-icons'
 import { faUser, faPhone, faBriefcase, faStar, faCode } from '@fortawesome/free-solid-svg-icons'
 import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 
-import data from '../../data.json'
+import { projects, tech_images } from '../../data.json'
 
+interface TechImages {
+  [key: string]: string;
+}
+
+const techImages: TechImages = tech_images
 
 const sections = ["Welcome", "about_me", "my_projects", "work_experience", "contact"];
 
@@ -24,7 +29,7 @@ const iconMap: Record<string, IconDefinition | undefined> = {
 
 
 function Project({ name }: {name: string}) {
-  const project = (data.projects as Record<string, typeof data.projects[keyof typeof data.projects]>)[name];
+  const project = (projects as Record<string, any>)[name];
 
   if (!project) {
     return <div>{name} project not found</div>
@@ -45,9 +50,9 @@ function Project({ name }: {name: string}) {
           <div className='flex flex-col w-full'>
             {/* <p className='comment'>&#47;&#47; Technologies used</p> */}
             <div className='flex flex-row gap-4 h-8 border-b-[#3e3e3e] w-fit mb-8'>
-              {project.technologies.map((tech) => (
+              {project.technologies.map((tech: string) => (
                 <div className='tech-icon-container h-[100%]' key={tech}>
-                  <Image src={`/tech_icons/${tech}.png`} alt={tech} width={200} height={200} className='h-[100%] w-fit object-scale-down' />
+                  <Image src={techImages[tech]} alt={tech} width={200} height={200} className='h-[100%] w-fit object-scale-down' />
                 </div>
               ))}
             </div>
@@ -127,7 +132,7 @@ export default function Home() {
         <h3 className='text-left'>Projects</h3>
         <div className={`cell-div { ${activeCell === "my_projects" ? "active-cell" : ""}}`} onClick={() => handleCellClick("my_projects")}>
           <div className='border-l-[1px] border-[#3f3f3f] px-3'>
-            {Object.keys(data.projects).map((key) => (
+            {Object.keys(projects).map((key) => (
               <Project key={key} name={key} />
             ))}
           </div>
