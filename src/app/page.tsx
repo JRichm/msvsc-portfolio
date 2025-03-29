@@ -16,14 +16,14 @@ interface TechImages {
 
 const techImages: TechImages = tech_images
 
-const sections = ["Welcome", "about_me", "my_projects", "work_experience", "contact"];
+const sections = ["Welcome", "aboutMe", "myProjects", "workExperience", "contact"];
 
 
 const iconMap: Record<string, IconDefinition | undefined> = {
   "Welcome": faStar,
-  "work_experience": faBriefcase,
-  "my_projects": faCode,
-  "about_me": faUser,
+  "workExperience": faBriefcase,
+  "myProjects": faCode,
+  "aboutMe": faUser,
   "contact": faPhone
 }
 
@@ -85,7 +85,7 @@ function HeaderTab({ name, isActive }: { name: string; isActive: boolean }) {
       {iconMap[name] && (
         <FontAwesomeIcon icon={iconMap[name]} className="w-4 h-4 p-0 place-self-center" />
       )}
-      <p className="font-sans not-italic">{name}</p>
+      <p className="font-roboto!">{name}</p>
     </div>
   );
 }
@@ -128,9 +128,9 @@ export default function Home() {
   
   function Projects() {
     return (
-      <div id="my_projects" className='flex flex-col w-[80vw]'>
+      <div id="myProjects" className='flex flex-col w-[80vw]'>
         <h3 className='text-left'>Projects</h3>
-        <div className={`cell-div { ${activeCell === "my_projects" ? "active-cell" : ""}}`} onClick={() => handleCellClick("my_projects")}>
+        <div className={`cell-div { ${activeCell === "myProjects" ? "active-cell" : ""}}`} onClick={() => handleCellClick("myProjects")}>
           <div className='border-l-[1px] border-[#3f3f3f] px-3'>
             {Object.keys(projects).map((key) => (
               <Project key={key} name={key} />
@@ -187,9 +187,9 @@ export default function Home() {
         </div>
 
         {/* About Me */}
-        <div id="about_me" className="flex flex-col w-[80vw]">
+        <div id="aboutMe" className="flex flex-col w-[80vw]">
           <h3 className="text-left">About Me</h3>
-          <div className={`cell-div ${activeCell === "about_me" ? "active-cell" : ""}`} onClick={() => handleCellClick("about_me")}>
+          <div className={`cell-div ${activeCell === "aboutMe" ? "active-cell" : ""}`} onClick={() => handleCellClick("aboutMe")}>
             <div className="border-l-[1px] border-[#3f3f3f] px-3">
               <p className='mb-4'>I’m a software developer who enjoys blending creativity with technology to build real-world solutions. Whether I’m designing interactive experiences or tackling tough problems, I always bring a curious mindset and a drive to innovate. I like finding smart, efficient ways to solve challenges while keeping things clean and maintainable.</p>
               <p className='mb-4'>Outside of work, I spend a lot of time messing around with procedural generation, making music, and playing strategy games. These hobbies help me think in new ways and keep my problem-solving skills sharp. I’m always experimenting, learning, and looking for new ways to push my ideas further.</p>
@@ -201,9 +201,9 @@ export default function Home() {
         <Projects />
 
         {/* Work Experience */}
-        <div id="work_experience" className="flex flex-col w-[80vw]">
+        <div id="workExperience" className="flex flex-col w-[80vw]">
           <h3 className="text-left">Work Experience</h3>
-          <div className={`cell-div ${activeCell === "work_experience" ? "active-cell" : ""}`} onClick={() => handleCellClick("work_experience")}>
+          <div className={`cell-div ${activeCell === "workExperience" ? "active-cell" : ""}`} onClick={() => handleCellClick("workExperience")}>
             <div className="border-l-[1px] border-[#3f3f3f] px-3">
               <div className="work-div">
                 <p className="comment">&#47;&#47; Rocky Mountain Reserve</p>
